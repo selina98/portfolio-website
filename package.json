@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:jquery": "cp node_modules/jquery/dist/jquery.slim.min.js static/jquery/",
+    "build": "npm-run-all -p build:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selina98/portfolio-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/selina98/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/selina98/portfolio-website#readme",
+  "dependencies": {
+    "parcel": "^1.12.3"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
+    "window": "^4.2.6"
+  }
+}

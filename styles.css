@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway:500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+  body {
+    background-color: black;
+  }
+
+  .name {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    padding-left: 2%;
+    font-size: 5em;
+    letter-spacing: 2pt;
+  }
+
+  .impactWordsContainer{
+      font-family: 'Late', sans-serif;
+      top: 65%;
+      position: absolute;
+      padding-left: 2%;
+      font-size: 1em;
+      letter-spacing: 2pt;
+  }
+  .impactWordsContainer ul {
+      list-style-type: none;
+  }
+  .impactWordsContainer li {
+    float: left;
+    margin: 0 10px 0 0;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+  
+  .fadeInAnimated {
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* forwards (animation-fill-mode) retains the style from the last keyframe when the animation ends */
+  }
+  
+  #second {
+    animation-delay: 1s;
+  }
+  
+  #third {
+    animation-delay: 2s;
+  }
+ 
+  /* .scroll-downs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding-top: 40%;
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  } */
+  
+  .scroll-wrapper{
+      overflow: hidden;
+  }
+  .scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+	-webkit-animation: fade_move_down 4s ease-in-out infinite;
+	-moz-animation:    fade_move_down 4s ease-in-out infinite;
+	animation:         fade_move_down 4s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+  #about {
+      position: relative;
+      height: 500px;
+      width: 100%;
+  }
