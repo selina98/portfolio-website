@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "express": "^4.17.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "window": "^4.2.6"
   }
 }
