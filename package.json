@@ -22,7 +22,7 @@
     "parcel": "^1.12.3"
   },
   "devDependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "jquery": "^3.4.1",
     "window": "^4.2.6"
   }
