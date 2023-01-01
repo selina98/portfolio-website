@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/selina98/portfolio-website#readme",
   "dependencies": {
-    "parcel": "^1.12.3"
+    "parcel": "^2.8.2"
   },
   "devDependencies": {
     "express": "^4.17.1",
